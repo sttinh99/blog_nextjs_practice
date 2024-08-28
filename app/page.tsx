@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Card children="Try more" />
       <Card children="Miss you" />
-      <Card />
+      <Card children="So cool" />
       <Card />
     </>
   );
