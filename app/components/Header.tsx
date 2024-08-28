@@ -1,19 +1,16 @@
 import Link from "next/link";
+import Navigation from "./Navigation";
 
 function Header() {
   return (
-    <header className="p-4 border border-yellow-200">
-      <ul className="flex space-x-20">
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/about/projects">Projects</Link>
-        </li>
-      </ul>
+    <header className="flex justify-between md:items-center mt-4">
+      <div className="flex items-center md:space-x-5">
+        <Link className="hidden md:block" href="/">
+          Mathew Tr
+        </Link>
+        <Navigation />
+      </div>
+      <div>Dark Toggle</div>
     </header>
   );
 }

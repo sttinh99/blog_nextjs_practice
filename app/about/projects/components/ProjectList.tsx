@@ -1,3 +1,5 @@
+import Card from "@/app/components/Card";
+
 type Blog = {
   id: number;
   title: string;
@@ -13,11 +15,11 @@ export default async function ProjectList() {
   return (
     <>
       {repos.map((repo: Blog) => (
-        <div className="mb-2" key={repo.id}>
+        <Card>
           <h2>{repo.title}</h2>
           <p>{repo.description}</p>
           <p>{repo.stargazers_count}</p>
-        </div>
+        </Card>
       ))}
     </>
   );
