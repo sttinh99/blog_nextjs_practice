@@ -13,14 +13,18 @@ export default async function ProjectList() {
   });
   const repos = await res.json();
   return (
-    <>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {repos.map((repo: Blog) => (
-        <Card>
-          <h2>{repo.title}</h2>
-          <p>{repo.description}</p>
-          <p>{repo.stargazers_count}</p>
+        <Card className="font-mono h-full">
+          <div className="flex justify-between">
+            <div>
+              <h2>{repo.title}</h2>
+              <p>{repo.description}</p>
+            </div>
+            <p>✨{repo.stargazers_count}</p>
+          </div>
         </Card>
       ))}
-    </>
+    </div>
   );
 }
