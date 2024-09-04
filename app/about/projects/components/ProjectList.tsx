@@ -12,7 +12,7 @@ export default async function ProjectList() {
     // cache: "no-store",
   });
   const repos = await res.json();
-  throw new Error(`ProjectList`);
+  // throw new Error(`ProjectList`);
   return (
     <div className="grid grid-ocls-1 md:grid-cols-2 gap-4">
       {repos.map((repo: Blog, index: number) => (

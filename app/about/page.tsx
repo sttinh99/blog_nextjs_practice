@@ -1,4 +1,5 @@
 export default function AboutPages() {
+  // throw new Error("oppps");
   return (
     <div>
       <h1>About Page</h1>
