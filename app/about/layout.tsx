@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function AboutLayout({ children }: any) {
+  //   throw new Error("upss");
+
   return (
     <div>
       <div>{children}</div>
