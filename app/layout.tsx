@@ -17,6 +17,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // throw new Error("chet tiet");
+
   return (
     <html lang="en">
       <body className={inter.className}>
