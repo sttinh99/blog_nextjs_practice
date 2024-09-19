@@ -14,6 +14,9 @@ export default function Navigation() {
         <li className={styles.link}>
           <Link href="/about/projects">Projects</Link>
         </li>
+        <li className={styles.link}>
+          <Link href="/photos">Photos</Link>
+        </li>
       </ul>
     </nav>
   );
